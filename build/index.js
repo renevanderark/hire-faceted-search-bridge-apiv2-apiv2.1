@@ -2639,6 +2639,7 @@ var getResults = function getResults(url, headers, done) {
 			handleError(err, resp, body);
 		}
 		var foo = JSON.parse(body);
+		console.warn("BRIDGING api/v2 api/v2.1 HERE!");
 		for (var i in foo.results) {
 			foo.refs[i].data = foo.results[i];
 			foo.refs[i].data.displayName = foo.refs[i].data["^displayName"];

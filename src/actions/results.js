@@ -23,6 +23,7 @@ let getResults = function(url, headers, done) {
 	let cb = function(err, resp, body) {
 		if (err) { handleError(err, resp, body); }
 		let foo =JSON.parse(body);
+		console.warn("BRIDGING api/v2 api/v2.1 HERE!");
 		for(let i in foo.results) {
 			foo.refs[i].data = foo.results[i];
 			foo.refs[i].data.displayName = foo.refs[i].data["^displayName"];
