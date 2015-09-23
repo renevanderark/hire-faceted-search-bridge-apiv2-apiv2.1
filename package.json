@@ -1,5 +1,5 @@
 {
-  "name": "hire-faceted-search",
+  "name": "hire-faceted-search-bridge",
   "version": "3.8.0",
   "description": "",
   "main": "build/index.js",
